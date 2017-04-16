@@ -1,0 +1,51 @@
+<div class="container">
+  <a href="/"> <<<< Back to hole opening</a>
+  <div class="row">
+    <div class="col-xs-8">
+      <h1>"That's a hole lot of snacks!"</h1>
+      <p class="who-said"> - A-a-ron </p>
+    </div>
+    <div class="col-xs-4">
+      <form method="link" action="/snacks/new">
+        <input id="button" type="submit" value="HOLE STUFFER">
+      </form>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+  <div class="col-xs-7">
+    {{#each snacks}}
+      <div class="row snack-row">
+        <div class="col-xs-2">
+          <img src="{{ this.img_url }}" alt="{{ this.name }}" class="poster">
+        </div>
+        <div class="col-xs-4 info-col">
+          <h2>
+            <a href="/snacks/{{this.id}}"> {{ this.name}} </a>
+          </h2>
+          <ul>
+            <li>Description: {{this.review_desc}} </li>
+            <li>Rating: {{this.rating}} </li>
+            <div class="row edit-button-row">
+              <!-- <a href="/edit/{{this.id}}">Edit</a> -->
+              <form method="link" action="/edit/{{ this.id }}">
+                <input id="edit-button" type="submit" value="Edit">
+              </form>
+          </div>
+          </ul>
+          <form action="/snacks/{{ snacks.id }}?_method=DELETE" method="POST">
+            <input id="destroy-button" type="submit" value="Destroy">
+          </form>
+
+        </div>
+
+        <!-- <div class="col-xs-6 right-side-bar">
+        </div> -->
+
+      </div>
+
+    {{/each}}
+
+</div>
+
+</div>

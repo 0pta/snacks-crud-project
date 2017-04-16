@@ -3,6 +3,118 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.index-title {
+  margin-bottom: auto;
+}
+
+.header-right {
+  display: flex;
+  flex: auto;
+}
+
+#button {
+  height: 40px;
+  width: 150px;
+  margin-left: 30%;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  background-color: darkgreen;
+  border-style: solid;
+  border-width: thick;
+  border-color: skyblue;
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+h1 {
+  color: darkgreen;
+  font-size: 44px;
+  font-style: oblique;
+  margin-bottom: -10px;
+}
+
+.who-said {
+  display: inline-flex;
+  font-style: oblique;
+  margin-left: 75px;
+
+}
+
 a {
   color: #00B7FF;
+}
+
+img {
+  height: 200px;
+  width: 150px;
+}
+
+.snack-row {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.info-col {
+  display: inline-block;
+  border-width: thin;
+  border-color: black;
+  margin-left: 15px;
+}
+
+li {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+.side-bar {
+  display: inline-table;
+  width: 30%;
+}
+
+.snack-show-col {
+  margin-top: 100px;
+  display: inline-table;
+  text-align: center;
+  width: 35%;
+}
+
+.edit-button-row {
+  text-align: left;
+  margin-left: 150px;
+}
+#edit-button {
+  font-size: 18px;
+  border-style: double;
+  background-color: #FFF563;
+}
+
+#show-pg-img {
+  margin-top: 25px;
+  width: 225px;
+  height: 325px;
+}
+
+#destroy-button {
+  margin-top: -15px;
+  margin-left: 25px;
+  background-color: #C22C2C;
+}
+
+.input-rows {
+  height: 50px;
+}
+
+.input-row-label {
+  text-align: right;
+  height: 32px;
+}
+
+#text-input {
+  width: 150px;
+  height: 30px;
+}
+
+.new-row {
+  text-align: center;
 }
